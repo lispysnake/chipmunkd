@@ -4,7 +4,6 @@ import chipmunk.chipmunk_types;
 import chipmunk.chipmunk_structs;
 
 extern (C):
-@nogc nothrow:
 
 cpBool cpConstraintIsPivotJoint (const(cpConstraint)* constraint);
 cpPivotJoint* cpPivotJointAlloc ();

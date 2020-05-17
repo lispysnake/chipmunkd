@@ -6,7 +6,6 @@ import chipmunk.cpConstraint;
 import chipmunk.cpBB;
 
 extern (C):
-@nogc nothrow:
 
 alias double function (cpConstraint*, double) cpDampedSpringForceFunc;
 

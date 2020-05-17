@@ -18,7 +18,6 @@ struct cpPolylineSet
     int capacity;
     cpPolyline** lines;
 }
-@nogc nothrow:
 
 void cpPolylineFree (cpPolyline* line);
 cpBool cpPolylineIsClosed (cpPolyline* line);

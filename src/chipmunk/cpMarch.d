@@ -6,7 +6,6 @@ import chipmunk.chipmunk_structs;
 import chipmunk.cpBB;
 
 extern (C):
-@nogc nothrow:
 
 alias double function (cpVect, void*) cpMarchSampleFunc;
 alias void function (cpVect, cpVect, void*) cpMarchSegmentFunc;

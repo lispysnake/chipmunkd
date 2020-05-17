@@ -7,7 +7,6 @@ import chipmunk.cpShape;
 import chipmunk.cpBB;
 
 extern (C):
-@nogc nothrow:
 
 alias ubyte function (cpArbiter*, cpSpace*, void*) cpCollisionBeginFunc;
 alias ubyte function (cpArbiter*, cpSpace*, void*) cpCollisionPreSolveFunc;

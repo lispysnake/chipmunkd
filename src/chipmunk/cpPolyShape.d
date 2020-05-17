@@ -5,7 +5,6 @@ import chipmunk.chipmunk_structs;
 import chipmunk.cpBB;
 
 extern (C):
-@nogc nothrow:
 
 cpPolyShape* cpPolyShapeAlloc ();
 cpPolyShape* cpPolyShapeInit (cpPolyShape* poly, cpBody* body_, int count, const(cpVect)* verts, cpTransform transform, cpFloat radius);

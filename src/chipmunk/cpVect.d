@@ -3,7 +3,6 @@ module chipmunk.cpVect;
 import chipmunk.chipmunk_types;
 
 extern (C):
-@nogc nothrow:
 
 const cpVect cpvzero = {0.0f,0.0f};
 

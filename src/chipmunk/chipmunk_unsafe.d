@@ -4,7 +4,6 @@ import chipmunk.chipmunk_types;
 import chipmunk.chipmunk_structs;
 
 extern (C):
-@nogc nothrow:
 
 void cpCircleShapeSetRadius (cpShape* shape, cpFloat radius);
 void cpCircleShapeSetOffset (cpShape* shape, cpVect offset);

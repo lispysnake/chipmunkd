@@ -1,8 +1,5 @@
 module chipmunk.chipmunk;
 
-import core.stdc.stdlib: exit;
-import core.stdc.stdio: printf;
-
 import chipmunk.cpBB;
 
 import chipmunk.chipmunk_types;
@@ -10,23 +7,11 @@ import chipmunk.chipmunk_structs;
 import chipmunk.chipmunk_private;
 
 extern (C):
-@nogc nothrow:
 
 extern __gshared const(char)* cpVersionString;
 
-void cpAssertHard(T)(T cond, string msg) {
-    if(!cond){
-        printf(msg.ptr);
-        exit(1);
-    }
-}
-
-void cpAssertSoft(T)(T cond, string msg){
-    if(!cond){
-        printf(msg.ptr);
-        exit(1);
-    }
-}
+void cpAssertHard(T)(lazy T cond, string msg) { assert(cond, msg); }
+void cpAssertSoft(T)(lazy T cond, string msg) { assert(cond, msg); }
 
 void cpMessage (const(char)* condition, const(char)* file, int line, int isError, int isHardError, const(char)* message, ...);
 cpFloat cpMomentForCircle (cpFloat m, cpFloat r1, cpFloat r2, cpVect offset);
